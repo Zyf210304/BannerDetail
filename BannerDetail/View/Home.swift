@@ -49,6 +49,7 @@ struct Home: View {
                             .frame(width: size.width, height: size.height)
                             .cornerRadius(15)
                             .matchedGeometryEffect(id: movie.id ,in: animation)
+                        //在一个图片上 点击图片 上半部分没问题 下半部分显示下一个的详情
                             .onTapGesture {
                                 
                                 print(movie.artwork)
