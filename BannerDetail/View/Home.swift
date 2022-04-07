@@ -45,7 +45,8 @@ struct Home: View {
                         
                         Image(movie.artwork)
                             .resizable()
-                            .aspectRatio(contentMode: .fill)
+                        //fill改成fit bug没了 但是还是不懂为什么好了
+                            .aspectRatio(contentMode: .fit)
                             .frame(width: size.width, height: size.height)
                             .cornerRadius(15)
                             .matchedGeometryEffect(id: movie.id ,in: animation)
